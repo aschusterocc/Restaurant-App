@@ -22,7 +22,6 @@
 		66960753159021250057AB05 /* BurgerReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66960752159021250057AB05 /* BurgerReviewViewController.m */; };
 		6696075915911D450057AB05 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6696075815911D450057AB05 /* CoreData.framework */; };
 		6696079315AB5FB10057AB05 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6696079215AB5FB10057AB05 /* OrderViewController.m */; };
-		669D0490158920F7002DC904 /* bigmac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669D048F158920F7002DC904 /* bigmac.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +51,6 @@
 		6696075815911D450057AB05 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6696079115AB5FB10057AB05 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		6696079215AB5FB10057AB05 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
-		669D048F158920F7002DC904 /* bigmac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bigmac.jpg; path = ../../../../Downloads/bigmac.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +113,6 @@
 		66272BF11581311A0067319E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				669D048F158920F7002DC904 /* bigmac.jpg */,
 				66272BF21581311A0067319E /* Views-Info.plist */,
 				66272BF31581311A0067319E /* InfoPlist.strings */,
 				66272BF61581311A0067319E /* main.m */,
@@ -195,7 +192,6 @@
 			files = (
 				66272BF51581311A0067319E /* InfoPlist.strings in Resources */,
 				66272BFE1581311A0067319E /* MainStoryboard.storyboard in Resources */,
-				669D0490158920F7002DC904 /* bigmac.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
