@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				6696074E158FFB7C0057AB05 /* ViewControllers */,
-				662C0648158FE886008DCBEE /* BurgerData.h */,
 				662C0649158FE886008DCBEE /* BurgerData.m */,
+				662C0648158FE886008DCBEE /* BurgerData.h */,
 				66272BF91581311A0067319E /* AppDelegate.h */,
 				66272BFA1581311A0067319E /* AppDelegate.m */,
 				66272BFC1581311A0067319E /* MainStoryboard.storyboard */,
