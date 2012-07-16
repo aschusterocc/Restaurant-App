@@ -43,55 +43,12 @@
     return ((interfaceOrientation == UIInterfaceOrientationLandscapeRight));
 }
 
-/*
--(IBAction)segmentUpdated:(id)sender
+-(IBAction)customBurgerPressed:(id)sender
 {
-    if  (_ingridientControl.selectedSegmentIndex == 0)
-    {
-        _ingridientLabel.text = @"Condiments";
-        [_button1 setTitle:@"Ketchup" forState:UIControlStateNormal];
-        [_button2 setTitle:@"Mustard" forState:UIControlStateNormal];
-        [_button3 setTitle:@"Relish" forState:UIControlStateNormal];
-        [_button4 setTitle:@"Mayonnaise" forState:UIControlStateNormal];
-        [_button5 setTitle:@"BBQ Sauce" forState:UIControlStateNormal];
-        [_button6 setTitle:@"A1 Sauce" forState:UIControlStateNormal];
-         
-        
-    }
-    else if (_ingridientControl.selectedSegmentIndex == 1)
-    {
-        _ingridientLabel.text = @"Toppings";
-        
-        [_button1 setTitle:@"Tomato" forState:UIControlStateNormal];
-        [_button2 setTitle:@"Onion" forState:UIControlStateNormal];
-        [_button3 setTitle:@"Pickle" forState:UIControlStateNormal];
-        [_button4 setTitle:@"Jalapeno" forState:UIControlStateNormal];
-        [_button5 setTitle:@"Pineapple" forState:UIControlStateNormal];
-        [_button6 setTitle:@"Lettuce" forState:UIControlStateNormal];
-         
-    }
-    else if (_ingridientControl.selectedSegmentIndex == 2)
-    {
-        _ingridientLabel.text = @"Premium";
-        
-        [_button1 setTitle:@"Bacon" forState:UIControlStateNormal];
-        [_button2 setTitle:@"Guacamole" forState:UIControlStateNormal];
-        [_button3 setTitle:@"Fried Egg" forState:UIControlStateNormal];
-        [_button4 setTitle:@"Mushroom" forState:UIControlStateNormal];
-        [_button5 setTitle:@"Crispy Onion Straws" forState:UIControlStateNormal];
-        [_button6 setTitle:@"Onion Ring" forState:UIControlStateNormal];
-        
-    }
-    
+    BurgerData* sharedBurgerData = [BurgerData sharedInstance];
+    sharedBurgerData.meatType = nil;
+    sharedBurgerData.bunType = nil;
+    sharedBurgerData.cheeseType = nil;
+    [sharedBurgerData.contentsList removeAllObjects];
 }
-
--(IBAction)bunButtonPressed:(UIButton *)sender
-{
-    
-    BurgerData *newburger = [[BurgerData alloc] init];
-    newburger.bunType = [NSString stringWithFormat:@"%@",[sender currentTitle]];
-    NSLog(@"Button pressed = %@", newburger.bunType);
-}
-
- */
 @end

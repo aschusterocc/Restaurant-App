@@ -9,19 +9,24 @@
 #import <Foundation/Foundation.h>
 
 @interface BurgerData : NSObject{
+    
+    NSMutableArray *contentsList;
 
 }
 
 + (id)sharedInstance;
 
 @property (nonatomic, strong) NSString *bunType;
-@property (nonatomic, strong) NSString *meatCooked;
+@property (nonatomic, strong) NSString *meatType;
+@property (nonatomic, strong) NSString *cheeseType;
 
--(void)setMeatCooked:(NSString *)meatCookedString;
--(void)setBunType:(NSString *)bunTypeString;
+@property (nonatomic, retain) NSMutableArray *contentsList;
+@property (nonatomic, retain) NSMutableArray *itemsList;
 
 
+@property (nonatomic, assign) int itemCount;
 
+-(void)storeItem;
 
 
 @end

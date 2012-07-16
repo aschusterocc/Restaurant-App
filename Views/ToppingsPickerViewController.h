@@ -26,22 +26,43 @@
 @property (nonatomic, retain) IBOutlet UIButton *button4;
 @property (nonatomic, retain) IBOutlet UIButton *button5;
 @property (nonatomic, retain) IBOutlet UIButton *button6;
+@property (nonatomic, retain) IBOutlet UILabel *bunLabel;
+@property (nonatomic, retain) IBOutlet UILabel *cheeseLabel;
+@property (nonatomic, retain) IBOutlet UILabel *meatLabel;
 
 @property (nonatomic, retain) NSMutableArray *contentsList;
 
-@property IBOutlet UIButton *meatTypeButton;
-@property IBOutlet UIButton *bunTypeButton;
-@property IBOutlet UIScrollView *ingridientsScrollView;
+
 @property IBOutlet UITableView *ingridientsTable;
 
+@property IBOutlet UIView *toppingsView;
+@property IBOutlet UIView *bunView;
+@property IBOutlet UIView *meatView;
+@property IBOutlet UIView *cheeseView;
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+@property BOOL bunChosen;
+@property BOOL cheeseChosen;
+@property BOOL meatChosen;
+
+
 
 -(IBAction)addIngridient:(UIButton *)sender;
-
 -(IBAction)segmentUpdated:(id)sender;
+-(IBAction)addToOrderPressed:(id)sender;
 
--(NSMutableArray *)contentsList;
+-(IBAction)bunButtonPressed:(id)sender;
+-(IBAction)meatButtonPressed:(id)sender;
+-(IBAction)cheeseButtonPressed:(id)sender;
+-(IBAction)toppingsButtonPressed:(id)sender;
+
+
+-(IBAction)bunTypePicked:(UIButton*)sender;
+-(IBAction)meatTypePicked:(id)sender;
+-(IBAction)cheeseTypePicked:(id)sender;
+
+
+ 
+
 
 
 @end

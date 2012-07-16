@@ -10,4 +10,14 @@
 
 @interface OrderViewController : UIViewController
 
+@property IBOutlet UIView *itemsView;
+
+@property IBOutlet UIButton *itemOne;
+@property IBOutlet UIButton *itemTwo;
+@property IBOutlet UIButton *itemThree;
+
+-(IBAction)itemOneTapped:(id)sender;
+-(IBAction)itemTwoTapped:(id)sender;
+-(IBAction)itemThreeTapped:(id)sender;
+
 @end

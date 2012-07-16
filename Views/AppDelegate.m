@@ -16,7 +16,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    BurgerData *myBurger = [BurgerData new];
     // Override point for customization after application launch.
     return YES;
 }
