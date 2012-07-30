@@ -11,5 +11,12 @@
 @interface ViewController : UIViewController
 
 -(IBAction)customBurgerPressed:(id)sender;
+-(IBAction)dailySpecialPressed:(id)sender;
+-(IBAction)premadeOnePressed:(id)sender;
+-(IBAction)premadeTwoPressed:(id)sender;
+-(IBAction)premadeThreePressed:(id)sender;
+-(IBAction)premadeFourPressed:(id)sender;
+
+
 @end
 

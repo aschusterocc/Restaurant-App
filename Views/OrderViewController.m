@@ -31,6 +31,7 @@
 
 - (void)viewDidLoad
 {
+    /*
     [super viewDidLoad];
     itemsView.layer.borderWidth = 2;
     itemsView.layer.borderColor = [UIColor blackColor].CGColor;
@@ -51,9 +52,25 @@
         [itemTwo setHidden:NO];
         [itemThree setHidden:NO];
     }
+    */
+    BurgerData* sharedBurgerData = [BurgerData sharedInstance];
     
-    
-    
+    int itemCounter = 0;
+    int currentCoordinates = 80;
+    for (int i = 0; i<sharedBurgerData.itemCount; i++)
+    {
+    OrderItemClass *newItem = [sharedBurgerData.itemsList objectAtIndex:itemCounter];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(10, currentCoordinates, 280, 90);
+    [button setTitle:[NSString stringWithFormat:@"%@ ",newItem.orderLabel] forState:UIControlStateNormal];
+    [itemsView addSubview:button];
+    [button setTag:itemCounter];
+    [button addTarget:self action:@selector(itemOneTapped:) forControlEvents:UIControlEventTouchUpInside];
+    currentCoordinates = currentCoordinates + 100;
+    itemCounter++;
+    }
+    int contentSize = currentCoordinates + 50;
+    itemsView.contentSize = CGSizeMake(300, contentSize);
     
 	// Do any additional setup after loading the view.
 }
@@ -72,7 +89,33 @@
 -(IBAction)itemOneTapped:(id)sender
 {
     BurgerData* sharedBurgerData = [BurgerData sharedInstance];
-    OrderItemClass *newItem = [sharedBurgerData.itemsList objectAtIndex:0];
+    OrderItemClass *newItem = [sharedBurgerData.itemsList objectAtIndex:[sender tag]];
+    [sharedBurgerData.contentsList removeAllObjects];
+    [sharedBurgerData.contentsList addObjectsFromArray:(newItem.toppingsList)];
+    sharedBurgerData.cheeseType = [NSString stringWithFormat:@"%@", newItem.cheeseType];
+    sharedBurgerData.bunType = [NSString stringWithFormat:@"%@", newItem.bunType];
+    sharedBurgerData.meatType = [NSString stringWithFormat:@"%@", newItem.meatType];
+    sharedBurgerData.editMode = YES;
+    [self performSegueWithIdentifier: @"editItem" sender: self];
+    
+    
+}
+
+-(IBAction)itemTwoTapped:(id)sender
+{
+    BurgerData* sharedBurgerData = [BurgerData sharedInstance];
+    OrderItemClass *newItem = [sharedBurgerData.itemsList objectAtIndex:1];
+    sharedBurgerData.contentsList = newItem.toppingsList;
+    sharedBurgerData.cheeseType = newItem.cheeseType;
+    sharedBurgerData.bunType = newItem.bunType;
+    sharedBurgerData.meatType = newItem.meatType;
+    [self performSegueWithIdentifier: @"editItem" sender: self];
+}
+
+-(IBAction)itemThreeTapped:(id)sender
+{
+    BurgerData* sharedBurgerData = [BurgerData sharedInstance];
+    OrderItemClass *newItem = [sharedBurgerData.itemsList objectAtIndex:2];
     sharedBurgerData.contentsList = newItem.toppingsList;
     sharedBurgerData.cheeseType = newItem.cheeseType;
     sharedBurgerData.bunType = newItem.bunType;

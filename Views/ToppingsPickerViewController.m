@@ -85,14 +85,15 @@
     if (sharedBurgerData.meatType.length > 0)
     {
         meatChosen = YES;
-        meatLabel.text = [NSString stringWithFormat: @"%@ Bun", sharedBurgerData.meatType];
+        meatLabel.text = [NSString stringWithFormat: @"Meat Cooked %@", sharedBurgerData.meatType];
     }
     
     if (sharedBurgerData.cheeseType.length > 0)
     {
-        cheeseChosen = YES;
-        cheeseLabel.text = [NSString stringWithFormat: @"%@ Bun", sharedBurgerData.cheeseType];
+        meatChosen = YES;
+        cheeseLabel.text = [NSString stringWithFormat: @"%@ Cheese", sharedBurgerData.cheeseType];
     }
+    NSLog(@"%@", sharedBurgerData.meatType);
 	// Do any additional setup after loading the view.
 }
 
@@ -282,17 +283,10 @@
         // optional - add more buttons:
         [alert show];
     }
-    else if (cheeseChosen == !YES)
-    {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You're not done yet!" message:@"Please select a type of cheese for your burger." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
-        // optional - add more buttons:
-        [alert show];
-    }
     
     else {
     
     
-        NSLog(@"%@", contentsList);
         BurgerData* sharedBurgerData = [BurgerData sharedInstance];
         if (!sharedBurgerData.contentsList)
         {
@@ -303,7 +297,6 @@
             [sharedBurgerData.contentsList removeAllObjects];
         }
         [sharedBurgerData.contentsList addObjectsFromArray:self.contentsList];
-        NSLog (@"%@", sharedBurgerData.contentsList);
         
         [self performSegueWithIdentifier: @"goToConfirmation" sender: self];
     }

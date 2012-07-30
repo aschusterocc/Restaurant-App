@@ -12,5 +12,6 @@
 
 @synthesize bunType, cheeseType, meatType;
 @synthesize toppingsList;
+@synthesize orderLabel;
 
 @end

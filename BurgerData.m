@@ -18,6 +18,9 @@
 @synthesize cheeseType;
 @synthesize itemCount;
 @synthesize itemsList;
+@synthesize orderLabel;
+@synthesize editMode;
+
 
 
 
@@ -39,6 +42,7 @@ static BurgerData *sharedInstance = nil;
     
     if (self) {
         // Work your initialising magic here as you normally would
+        itemsList = [[NSMutableArray alloc] init];
     }
     
     return self;
@@ -69,6 +73,21 @@ static BurgerData *sharedInstance = nil;
 
 -(void)storeItem
 {
+        OrderItemClass *newOrder = [OrderItemClass new];
+        newOrder.meatType = [NSString stringWithFormat:@"%@", self.meatType];
+        newOrder.bunType = [NSString stringWithFormat:@"%@", self.bunType];
+        newOrder.cheeseType = [NSString stringWithFormat:@"%@", self.cheeseType];
+        newOrder.toppingsList = [NSMutableArray new];
+        [newOrder.toppingsList removeAllObjects];
+        [newOrder.toppingsList addObjectsFromArray:contentsList];
+        NSLog(@"%@", newOrder.toppingsList);
+        NSLog(@"%@", newOrder.bunType);
+        NSLog(@"%@", self.contentsList);
+        newOrder.orderLabel = [NSString stringWithFormat:@"%@", self.orderLabel];
+        
+        [itemsList addObject:newOrder];
+    
+    /*
     if (!itemCount)
     {
         itemCount = 0;
@@ -80,9 +99,12 @@ static BurgerData *sharedInstance = nil;
         item1.meatType = self.meatType;
         item1.bunType = self.bunType;
         item1.cheeseType = self.cheeseType;
-        item1.toppingsList = [self.contentsList copy];
+        item1.toppingsList = self.contentsList;
+        item1.orderLabel = self.orderLabel;
         
         [itemsList insertObject:item1 atIndex:0];
+        NSLog(@"%@", item1.meatType);
+        NSLog(@"%@", itemsList);
         
     }
     if (itemCount == 1)
@@ -91,7 +113,8 @@ static BurgerData *sharedInstance = nil;
         item2.meatType = self.meatType;
         item2.bunType = self.bunType;
         item2.cheeseType = self.cheeseType;
-        item2.toppingsList = [self.contentsList copy];
+        item2.toppingsList = self.contentsList;
+        item2.orderLabel = self.orderLabel;
         
         [itemsList insertObject:item2 atIndex:1];
         
@@ -102,13 +125,14 @@ static BurgerData *sharedInstance = nil;
         item3.meatType = self.meatType;
         item3.bunType = self.bunType;
         item3.cheeseType = self.cheeseType;
-        item3.toppingsList = [self.contentsList copy];
+        item3.toppingsList = self.contentsList;
+        item3.orderLabel = self.orderLabel;
         
         [itemsList insertObject:item3 atIndex:2];
         
     }
 
-
+*/
 }
 
 

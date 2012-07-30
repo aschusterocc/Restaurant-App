@@ -11,17 +11,22 @@
 @interface BurgerData : NSObject{
     
     NSMutableArray *contentsList;
+    NSMutableArray *itemsList;
 
 }
 
 + (id)sharedInstance;
 
+@property (nonatomic, strong) NSString *orderLabel;
 @property (nonatomic, strong) NSString *bunType;
 @property (nonatomic, strong) NSString *meatType;
 @property (nonatomic, strong) NSString *cheeseType;
 
 @property (nonatomic, retain) NSMutableArray *contentsList;
 @property (nonatomic, retain) NSMutableArray *itemsList;
+
+@property BOOL editMode;
+
 
 
 @property (nonatomic, assign) int itemCount;

@@ -19,6 +19,7 @@
 		666D013A15B3B1520053C812 /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666D013915B3B1520053C812 /* ConfirmationViewController.m */; };
 		666D013C15B491310053C812 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666D013B15B491310053C812 /* QuartzCore.framework */; };
 		666D013F15B4C49D0053C812 /* OrderItemClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 666D013E15B4C49D0053C812 /* OrderItemClass.m */; };
+		666D017015BDD9B70053C812 /* FinalScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 666D016F15BDD9B60053C812 /* FinalScreen.m */; };
 		6696074D158FFB250057AB05 /* ToppingsPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6696074C158FFB250057AB05 /* ToppingsPickerViewController.m */; };
 		66960753159021250057AB05 /* BurgerReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66960752159021250057AB05 /* BurgerReviewViewController.m */; };
 		6696075915911D450057AB05 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6696075815911D450057AB05 /* CoreData.framework */; };
@@ -46,6 +47,8 @@
 		666D013B15B491310053C812 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		666D013D15B4C49D0053C812 /* OrderItemClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderItemClass.h; sourceTree = "<group>"; };
 		666D013E15B4C49D0053C812 /* OrderItemClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderItemClass.m; sourceTree = "<group>"; };
+		666D016E15BDD9B60053C812 /* FinalScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalScreen.h; sourceTree = "<group>"; };
+		666D016F15BDD9B60053C812 /* FinalScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalScreen.m; sourceTree = "<group>"; };
 		6696074B158FFB250057AB05 /* ToppingsPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToppingsPickerViewController.h; sourceTree = "<group>"; };
 		6696074C158FFB250057AB05 /* ToppingsPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToppingsPickerViewController.m; sourceTree = "<group>"; };
 		66960751159021250057AB05 /* BurgerReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurgerReviewViewController.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				66272C001581311A0067319E /* ViewController.m */,
 				6696079115AB5FB10057AB05 /* OrderViewController.h */,
 				6696079215AB5FB10057AB05 /* OrderViewController.m */,
+				666D016E15BDD9B60053C812 /* FinalScreen.h */,
+				666D016F15BDD9B60053C812 /* FinalScreen.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				6696079315AB5FB10057AB05 /* OrderViewController.m in Sources */,
 				666D013A15B3B1520053C812 /* ConfirmationViewController.m in Sources */,
 				666D013F15B4C49D0053C812 /* OrderItemClass.m in Sources */,
+				666D017015BDD9B70053C812 /* FinalScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

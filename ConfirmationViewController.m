@@ -61,7 +61,6 @@
     }
     
     cell.textLabel.text = [contentsList objectAtIndex:[indexPath row]];
-    NSLog(@"Cell is %@", [contentsList objectAtIndex:indexPath.row]);
     return cell;
 }
 
@@ -79,9 +78,18 @@
 {
 
     BurgerData* sharedBurgerData = [BurgerData sharedInstance];
-    [sharedBurgerData storeItem];
-    sharedBurgerData.itemCount = sharedBurgerData.itemCount + 1;
-    [self performSegueWithIdentifier: @"toOrderScreen" sender: self];
+    
+    if (sharedBurgerData.editMode == NO)
+    {
+        sharedBurgerData.itemCount = sharedBurgerData.itemCount + 1;
+        [sharedBurgerData storeItem];
+        [self performSegueWithIdentifier: @"toOrderScreen" sender: self];
+    }
+    
+    else 
+    {
+        [self performSegueWithIdentifier: @"toOrderScreen"  sender: self];
+    }
     
 
 

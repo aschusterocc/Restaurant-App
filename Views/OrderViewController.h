@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrderViewController : UIViewController
+@interface OrderViewController : UIViewController <UIScrollViewDelegate>
 
-@property IBOutlet UIView *itemsView;
+@property IBOutlet UIScrollView *itemsView;
 
 @property IBOutlet UIButton *itemOne;
 @property IBOutlet UIButton *itemTwo;
