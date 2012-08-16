@@ -44,8 +44,8 @@
 
 - (IBAction)startOver:(id)sender
 {
-    BurgerData* sharedBurgerData = [BurgerData sharedInstance];
-    sharedBurgerData.itemCount = 0;
+   // BurgerData* sharedBurgerData = [BurgerData sharedInstance];
+   // sharedBurgerData.itemCount = 0;
     
 }
 @end

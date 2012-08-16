@@ -20,6 +20,7 @@
 @synthesize itemsList;
 @synthesize orderLabel;
 @synthesize editMode;
+@synthesize orderArchive;
 
 
 
@@ -39,13 +40,14 @@ static BurgerData *sharedInstance = nil;
 - (id)init
 {
     self = [super init];
-    
     if (self) {
         // Work your initialising magic here as you normally would
         itemsList = [[NSMutableArray alloc] init];
+        orderArchive = [[NSMutableArray alloc] init];
     }
-    
+            
     return self;
+
 }
 
 
@@ -80,11 +82,10 @@ static BurgerData *sharedInstance = nil;
         newOrder.toppingsList = [NSMutableArray new];
         [newOrder.toppingsList removeAllObjects];
         [newOrder.toppingsList addObjectsFromArray:contentsList];
-        NSLog(@"%@", newOrder.toppingsList);
-        NSLog(@"%@", newOrder.bunType);
-        NSLog(@"%@", self.contentsList);
         newOrder.orderLabel = [NSString stringWithFormat:@"%@", self.orderLabel];
-        
+    
+    
+    
         [itemsList addObject:newOrder];
     
     /*

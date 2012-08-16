@@ -93,7 +93,7 @@
         meatChosen = YES;
         cheeseLabel.text = [NSString stringWithFormat: @"%@ Cheese", sharedBurgerData.cheeseType];
     }
-    NSLog(@"%@", sharedBurgerData.meatType);
+
 	// Do any additional setup after loading the view.
 }
 

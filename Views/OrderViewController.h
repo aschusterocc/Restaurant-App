@@ -19,5 +19,6 @@
 -(IBAction)itemOneTapped:(id)sender;
 -(IBAction)itemTwoTapped:(id)sender;
 -(IBAction)itemThreeTapped:(id)sender;
+-(IBAction)orderComplete:(id)sender;
 
 @end

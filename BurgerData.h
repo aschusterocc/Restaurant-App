@@ -12,6 +12,7 @@
     
     NSMutableArray *contentsList;
     NSMutableArray *itemsList;
+    NSMutableArray *orderArchive;
 
 }
 
@@ -24,6 +25,7 @@
 
 @property (nonatomic, retain) NSMutableArray *contentsList;
 @property (nonatomic, retain) NSMutableArray *itemsList;
+@property (nonatomic, retain) NSMutableArray *orderArchive;
 
 @property BOOL editMode;
 

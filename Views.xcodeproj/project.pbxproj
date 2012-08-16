@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6616E3B915D9A94D00F982B4 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6616E3B815D9A94D00F982B4 /* Data.plist */; };
+		6624D34015D5886900382235 /* FoodIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6624D33F15D5886900382235 /* FoodIcon.png */; };
+		6624D34415D588B700382235 /* FoodIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6624D34315D588B700382235 /* FoodIcon2.png */; };
+		6624D34615D5C32500382235 /* FoodIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6624D34515D5C32500382235 /* FoodIcon2.png */; };
+		6624D34815D5C34400382235 /* FoodIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6624D34715D5C34400382235 /* FoodIcon.png */; };
 		66272BEB1581311A0067319E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66272BEA1581311A0067319E /* UIKit.framework */; };
 		66272BED1581311A0067319E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66272BEC1581311A0067319E /* Foundation.framework */; };
 		66272BEF1581311A0067319E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66272BEE1581311A0067319E /* CoreGraphics.framework */; };
@@ -20,6 +25,7 @@
 		666D013C15B491310053C812 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666D013B15B491310053C812 /* QuartzCore.framework */; };
 		666D013F15B4C49D0053C812 /* OrderItemClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 666D013E15B4C49D0053C812 /* OrderItemClass.m */; };
 		666D017015BDD9B70053C812 /* FinalScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 666D016F15BDD9B60053C812 /* FinalScreen.m */; };
+		6687FAE815D46A3C00467911 /* OrderHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6687FAE715D46A3C00467911 /* OrderHistoryViewController.m */; };
 		6696074D158FFB250057AB05 /* ToppingsPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6696074C158FFB250057AB05 /* ToppingsPickerViewController.m */; };
 		66960753159021250057AB05 /* BurgerReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66960752159021250057AB05 /* BurgerReviewViewController.m */; };
 		6696075915911D450057AB05 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6696075815911D450057AB05 /* CoreData.framework */; };
@@ -27,7 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		66272BE61581311A0067319E /* Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Views.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6616E3B815D9A94D00F982B4 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		6624D33F15D5886900382235 /* FoodIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FoodIcon.png; path = ../../FoodIcon.png; sourceTree = "<group>"; };
+		6624D34315D588B700382235 /* FoodIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FoodIcon2.png; path = ../../FoodIcon2.png; sourceTree = "<group>"; };
+		6624D34515D5C32500382235 /* FoodIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FoodIcon2.png; sourceTree = "<group>"; };
+		6624D34715D5C34400382235 /* FoodIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FoodIcon.png; sourceTree = "<group>"; };
+		66272BE61581311A0067319E /* iHunger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHunger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66272BEA1581311A0067319E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		66272BEC1581311A0067319E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66272BEE1581311A0067319E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,6 +60,8 @@
 		666D013E15B4C49D0053C812 /* OrderItemClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderItemClass.m; sourceTree = "<group>"; };
 		666D016E15BDD9B60053C812 /* FinalScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalScreen.h; sourceTree = "<group>"; };
 		666D016F15BDD9B60053C812 /* FinalScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalScreen.m; sourceTree = "<group>"; };
+		6687FAE615D46A3C00467911 /* OrderHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryViewController.h; sourceTree = "<group>"; };
+		6687FAE715D46A3C00467911 /* OrderHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHistoryViewController.m; sourceTree = "<group>"; };
 		6696074B158FFB250057AB05 /* ToppingsPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToppingsPickerViewController.h; sourceTree = "<group>"; };
 		6696074C158FFB250057AB05 /* ToppingsPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToppingsPickerViewController.m; sourceTree = "<group>"; };
 		66960751159021250057AB05 /* BurgerReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurgerReviewViewController.h; sourceTree = "<group>"; };
@@ -77,16 +90,18 @@
 		66272BDB1581311A0067319E = {
 			isa = PBXGroup;
 			children = (
+				6624D34715D5C34400382235 /* FoodIcon.png */,
+				6624D34515D5C32500382235 /* FoodIcon2.png */,
 				66272BF01581311A0067319E /* Views */,
-				66272BE91581311A0067319E /* Frameworks */,
 				66272BE71581311A0067319E /* Products */,
+				66272BE91581311A0067319E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		66272BE71581311A0067319E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66272BE61581311A0067319E /* Views.app */,
+				66272BE61581311A0067319E /* iHunger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,10 +137,13 @@
 		66272BF11581311A0067319E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6624D34315D588B700382235 /* FoodIcon2.png */,
+				6624D33F15D5886900382235 /* FoodIcon.png */,
 				66272BF21581311A0067319E /* Views-Info.plist */,
 				66272BF31581311A0067319E /* InfoPlist.strings */,
 				66272BF61581311A0067319E /* main.m */,
 				66272BF81581311A0067319E /* Views-Prefix.pch */,
+				6616E3B815D9A94D00F982B4 /* Data.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,18 +151,20 @@
 		6696074E158FFB7C0057AB05 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				66272BFF1581311A0067319E /* ViewController.h */,
+				66272C001581311A0067319E /* ViewController.m */,
 				666D013815B3B1520053C812 /* ConfirmationViewController.h */,
 				666D013915B3B1520053C812 /* ConfirmationViewController.m */,
 				6696074B158FFB250057AB05 /* ToppingsPickerViewController.h */,
 				6696074C158FFB250057AB05 /* ToppingsPickerViewController.m */,
 				66960751159021250057AB05 /* BurgerReviewViewController.h */,
 				66960752159021250057AB05 /* BurgerReviewViewController.m */,
-				66272BFF1581311A0067319E /* ViewController.h */,
-				66272C001581311A0067319E /* ViewController.m */,
 				6696079115AB5FB10057AB05 /* OrderViewController.h */,
 				6696079215AB5FB10057AB05 /* OrderViewController.m */,
 				666D016E15BDD9B60053C812 /* FinalScreen.h */,
 				666D016F15BDD9B60053C812 /* FinalScreen.m */,
+				6687FAE615D46A3C00467911 /* OrderHistoryViewController.h */,
+				6687FAE715D46A3C00467911 /* OrderHistoryViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -152,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66272BE51581311A0067319E /* Views */ = {
+		66272BE51581311A0067319E /* iHunger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66272C041581311A0067319E /* Build configuration list for PBXNativeTarget "Views" */;
+			buildConfigurationList = 66272C041581311A0067319E /* Build configuration list for PBXNativeTarget "iHunger" */;
 			buildPhases = (
 				66272BE21581311A0067319E /* Sources */,
 				66272BE31581311A0067319E /* Frameworks */,
@@ -164,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = Views;
+			name = iHunger;
 			productName = Views;
-			productReference = 66272BE61581311A0067319E /* Views.app */;
+			productReference = 66272BE61581311A0067319E /* iHunger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +209,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66272BE51581311A0067319E /* Views */,
+				66272BE51581311A0067319E /* iHunger */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +221,11 @@
 			files = (
 				66272BF51581311A0067319E /* InfoPlist.strings in Resources */,
 				66272BFE1581311A0067319E /* MainStoryboard.storyboard in Resources */,
+				6624D34015D5886900382235 /* FoodIcon.png in Resources */,
+				6624D34415D588B700382235 /* FoodIcon2.png in Resources */,
+				6624D34615D5C32500382235 /* FoodIcon2.png in Resources */,
+				6624D34815D5C34400382235 /* FoodIcon.png in Resources */,
+				6616E3B915D9A94D00F982B4 /* Data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +246,7 @@
 				666D013A15B3B1520053C812 /* ConfirmationViewController.m in Sources */,
 				666D013F15B4C49D0053C812 /* OrderItemClass.m in Sources */,
 				666D017015BDD9B70053C812 /* FinalScreen.m in Sources */,
+				6687FAE815D46A3C00467911 /* OrderHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66272C041581311A0067319E /* Build configuration list for PBXNativeTarget "Views" */ = {
+		66272C041581311A0067319E /* Build configuration list for PBXNativeTarget "iHunger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66272C051581311A0067319E /* Debug */,

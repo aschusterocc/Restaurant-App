@@ -14,8 +14,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "66272BE51581311A0067319E"
-               BuildableName = "Views.app"
-               BlueprintName = "Views"
+               BuildableName = "iHunger.app"
+               BlueprintName = "iHunger"
                ReferencedContainer = "container:Views.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,8 +32,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66272BE51581311A0067319E"
-            BuildableName = "Views.app"
-            BlueprintName = "Views"
+            BuildableName = "iHunger.app"
+            BlueprintName = "iHunger"
             ReferencedContainer = "container:Views.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66272BE51581311A0067319E"
-            BuildableName = "Views.app"
-            BlueprintName = "Views"
+            BuildableName = "iHunger.app"
+            BlueprintName = "iHunger"
             ReferencedContainer = "container:Views.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "66272BE51581311A0067319E"
-            BuildableName = "Views.app"
-            BlueprintName = "Views"
+            BuildableName = "iHunger.app"
+            BlueprintName = "iHunger"
             ReferencedContainer = "container:Views.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

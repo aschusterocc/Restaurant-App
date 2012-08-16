@@ -35,6 +35,10 @@
 
 @property IBOutlet UITableView *ingridientsTable;
 
+@property IBOutlet UIView *toppingsButtons;
+@property IBOutlet UIView *condimentsButtons;
+@property IBOutlet UIView *premiumButtons;
+
 @property IBOutlet UIView *toppingsView;
 @property IBOutlet UIView *bunView;
 @property IBOutlet UIView *meatView;

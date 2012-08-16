@@ -123,4 +123,17 @@
     [self performSegueWithIdentifier: @"editItem" sender: self];
 }
 
+-(IBAction)orderComplete:(id)sender
+{
+    BurgerData* sharedBurgerData = [BurgerData sharedInstance];
+    [sharedBurgerData.orderArchive addObjectsFromArray:sharedBurgerData.itemsList];
+    
+    
+    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *plistPath = [rootPath stringByAppendingPathComponent:@"data.archive"];
+    [NSKeyedArchiver archiveRootObject:sharedBurgerData.orderArchive toFile:plistPath];
+    
+    [sharedBurgerData.itemsList removeAllObjects];
+    sharedBurgerData.itemCount = 0;
+}
 @end

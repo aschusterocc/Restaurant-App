@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface OrderItemClass : NSObject{
-    NSMutableArray *toppingList;
+    NSMutableArray *toppingsList;
 
 }
 
@@ -18,5 +18,8 @@
 @property (nonatomic, retain) NSString *cheeseType;
 @property (nonatomic, retain) NSMutableArray *toppingsList;
 @property (nonatomic, retain) NSString *orderLabel;
+
+
+
 
 @end
